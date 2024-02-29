@@ -1,30 +1,16 @@
 package hexlet.code;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+
 import java.util.TreeMap;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Map;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class Differ {
-    public static String generate(String filepath1, String filepath2) throws IOException {
+    public static String generate(String filePath1, String filePath2) throws Exception {
 
-        Path path1 = Paths.get(filepath1).toAbsolutePath().normalize();
-        Path path2 = Paths.get(filepath2).toAbsolutePath().normalize();
+        TreeMap<String, Object> mapFromFile1 = Parser.parse(filePath1);
+        TreeMap<String, Object> mapFromFile2 = Parser.parse(filePath2);
 
-        String content1 = Files.readString(path1);
-        String content2 = Files.readString(path2);
-
-        ObjectMapper mapper = new ObjectMapper();
-        TreeMap<String, Object> mapFromFile1 = mapper.readValue(content1,
-                new TypeReference<TreeMap<String, Object>>() {
-                });
-        TreeMap<String, Object> mapFromFile2 = mapper.readValue(content2,
-                new TypeReference<TreeMap<String, Object>>() {
-                });
         Set<Map.Entry<String, Object>> setOfPairs = new HashSet<>();
         setOfPairs.addAll(mapFromFile1.entrySet());
         setOfPairs.addAll(mapFromFile2.entrySet());
