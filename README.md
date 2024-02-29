@@ -3,3 +3,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/e9575cc8fa04dbb25e5f/maintainability)](https://codeclimate.com/github/ViktorSitnikov97/java-project-71/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e9575cc8fa04dbb25e5f/test_coverage)](https://codeclimate.com/github/ViktorSitnikov97/java-project-71/test_coverage)
 
 https://asciinema.org/a/643611
+
+https://asciinema.org/a/644190
