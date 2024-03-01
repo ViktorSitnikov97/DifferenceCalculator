@@ -1,5 +1,6 @@
 package hexlet.code;
 
+import hexlet.code.formatters.Json;
 import hexlet.code.formatters.Plain;
 import hexlet.code.formatters.Stylish;
 
@@ -12,6 +13,8 @@ public class Formatter {
                 return Plain.getReport(resultMap);
             case "stylish":
                 return Stylish.getReport(resultMap);
+            case "json":
+                return Json.getReport(resultMap);
             default:
                 throw new Exception("Format " + "'" + format + "'" + " is wrong!");
         }
