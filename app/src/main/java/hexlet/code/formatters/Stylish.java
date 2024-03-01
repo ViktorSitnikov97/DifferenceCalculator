@@ -17,7 +17,7 @@ public class Stylish {
             if (valueObject.getStatusKey().equals("deleted")) {
                 resultString.append(" ".repeat(2) + "- " + key + ": " + valueObject.getOldValue() + "\n");
             } else if (valueObject.getStatusKey().equals("unchanged")) {
-                resultString.append(" ".repeat(4) +  key + ": " + valueObject.getOldValue() + "\n");
+                resultString.append("  ".repeat(2) +  key + ": " + valueObject.getOldValue() + "\n");
             } else if (valueObject.getStatusKey().equals("changed")) {
                 resultString.append(" ".repeat(2) + "- " +  key + ": " + valueObject.getOldValue() + "\n");
                 resultString.append(" ".repeat(2) + "+ " +  key + ": " + valueObject.getNewValue() + "\n");
