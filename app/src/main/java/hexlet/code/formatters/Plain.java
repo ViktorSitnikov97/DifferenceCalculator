@@ -26,7 +26,7 @@ public class Plain {
                         + oldValueString + " to " + newValueString + "\n");
             } else if (valueObject.getStatusKey().equals("added")) {
                 resultString.append("Property " + "'" + key + "'" + " was added with value: "
-                         + newValueString);
+                         + newValueString + "\n");
             }
         }
         return resultString.toString();
@@ -34,7 +34,7 @@ public class Plain {
 
     public static String getPropertyValue(Object value) {
         if (value instanceof Map<?, ?> || value instanceof List<?>) {
-            return value.toString();
+            return "[complex value]";
         } else if (value == null) {
             return "null";
         } else if (value instanceof String) {
