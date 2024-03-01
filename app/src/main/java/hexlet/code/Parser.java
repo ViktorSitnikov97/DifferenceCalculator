@@ -12,11 +12,11 @@ public class Parser {
     public static TreeMap<String, Object> parse(String filePath) throws Exception {
 
         int index = filePath.lastIndexOf('.');
-        String format = index > 0 ? filePath.substring(index + 1) : "";
+        String formatOfFile = index > 0 ? filePath.substring(index + 1) : "";
         Path path = Paths.get(filePath).toAbsolutePath().normalize();
         String content = Files.readString(path);
 
-        switch (format) {
+        switch (formatOfFile) {
             case "json":
                 ObjectMapper mapperJson = new ObjectMapper();
                 return mapperJson.readValue(content,
@@ -28,7 +28,7 @@ public class Parser {
                         new TypeReference<TreeMap<String, Object>>() {
                         });
             default:
-                throw new Exception("Wrong format: '" + format + "'");
+                throw new Exception("Wrong format: '" + formatOfFile + "'");
         }
     }
 }

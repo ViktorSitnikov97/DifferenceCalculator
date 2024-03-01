@@ -6,7 +6,7 @@ import hexlet.code.formatters.Stylish;
 import java.util.TreeMap;
 
 public class Formatter {
-    public static String selectFormat(TreeMap<String, Status> resultMap, String format) throws Exception {
+    public static String getDataWithSelectedFormat(TreeMap<String, Status> resultMap, String format) throws Exception {
         switch (format) {
             case "plain":
                 return Plain.getReport(resultMap);
@@ -17,3 +17,4 @@ public class Formatter {
         }
     }
 }
+

@@ -20,8 +20,4 @@ public class Status {
         return statusKey;
     }
 
-    @Override
-    public String toString() {
-        return "Status{" + oldValue + ", " + newValue + ", " + statusKey + '}';
-    }
 }

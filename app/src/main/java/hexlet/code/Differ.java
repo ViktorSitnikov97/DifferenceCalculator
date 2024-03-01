@@ -8,7 +8,7 @@ public class Differ {
         TreeMap<String, Object> mapFromFile2 = Parser.parse(filePath2);
         TreeMap<String, Status> resultMap = CalculateDifference.getDifference(mapFromFile1, mapFromFile2);
 
-        return Formatter.selectFormat(resultMap, format);
+        return Formatter.getDataWithSelectedFormat(resultMap, format);
     }
     public static String generate(String filePath1, String filePath2) throws Exception {
         return generate(filePath1, filePath2, "stylish");
