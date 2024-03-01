@@ -14,19 +14,19 @@ class App implements Callable<Integer> {
     private static final int SUCCESS_EXIT = 0;
     private static final int ERROR_EXIT = 1;
 
+    @Option(names = {"-f", "--format"}, paramLabel = "format", defaultValue = "stylish",
+            description = "output format [default: stylish]")
+    private String format;
+
     @Parameters(paramLabel = "filepath1", description = "path to first file")
     private String filePath1;
     @Parameters(paramLabel = "filepath2", description = "path to second file")
     private String filePath2;
-    @Option(names = {"-f", "--format"},
-            paramLabel = "format",
-            description = "output format [default: stylish]")
-    private String format;
 
     @Override
     public Integer call() throws Exception {
         try {
-            String formattedDiff = Differ.generate(filePath1, filePath2);
+            String formattedDiff = Differ.generate(filePath1, filePath2, format);
             System.out.println(formattedDiff);
         } catch (Exception e) {
             System.err.println(e.getMessage());
