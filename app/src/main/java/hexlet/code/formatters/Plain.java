@@ -1,6 +1,7 @@
 package hexlet.code.formatters;
 
 import hexlet.code.Status;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
 import java.util.Map;
@@ -29,7 +30,7 @@ public class Plain {
                          + newValueString + "\n");
             }
         }
-        return resultString.toString();
+        return StringUtils.chop(resultString.toString());
     }
 
     public static String getPropertyValue(Object value) {

@@ -34,7 +34,7 @@ public class DifferTest {
         String expected = "Property 'follow' was removed\n"
                 + "Property 'proxy' was removed\n"
                 + "Property 'timeout' was updated. From 50 to 20\n"
-                + "Property 'verbose' was added with value: true\n";
+                + "Property 'verbose' was added with value: true";
 
         String filePath1 = "src/test/resources/fixtures/file1.yml";
         String filePath2 = "src/test/resources/fixtures/file2.yml";
@@ -102,7 +102,7 @@ public class DifferTest {
                 + "Property 'obj1' was added with value: [complex value]\n"
                 + "Property 'setting1' was updated. From 'Some value' to 'Another value'\n"
                 + "Property 'setting2' was updated. From 200 to 300\n"
-                + "Property 'setting3' was updated. From true to 'none'\n";
+                + "Property 'setting3' was updated. From true to 'none'";
 
         String filePath1 = "src/test/resources/fixtures/file3.yml";
         String filePath2 = "src/test/resources/fixtures/file4.yml";
