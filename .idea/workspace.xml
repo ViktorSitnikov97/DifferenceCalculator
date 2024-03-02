@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2880f08e-7bcc-4793-b1c8-a2aa4cde7537" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/java-project-71.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/hexlet/code/DifferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/hexlet/code/DifferTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file1.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file2.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file3.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/DeepStructurefile1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file3.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/DeepStructurefile1.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/DeepStructurefile2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fixtures/file4.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/fixtures/DeepStructurefile2.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +53,6 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="other" type="c8890929:TasksNode$1" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="app" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -118,7 +98,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/viktor/java-project-71",
+    "last_opened_file_path": "/home/viktor/my-first-workflow",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.34085512"
@@ -254,6 +234,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-20.0.2-corretto-20.0.2.1-8336523bb0d9-0b85dddc" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-76dd8dae" />
       </set>
     </attachedChunks>
   </component>
