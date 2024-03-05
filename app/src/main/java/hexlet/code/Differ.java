@@ -27,7 +27,7 @@ public class Differ {
         return Parser.parse(content, format);
     }
 
-    private static String getDataFormat(String filePath) {
+    public static String getDataFormat(String filePath) {
         int index = filePath.lastIndexOf('.');
         return index > 0
                 ? filePath.substring(index + 1)
