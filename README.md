@@ -1,4 +1,4 @@
-# Проект  "Вычислитель отличий".
+# Проект  "Вычислитель отличий"
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ViktorSitnikov97/java-project-71/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ViktorSitnikov97/java-project-71/actions) [![example workflow](https://github.com/ViktorSitnikov97/java-project-71/actions/workflows/main.yml/badge.svg)](https://github.com/ViktorSitnikov97/java-project-71/actions)
@@ -45,7 +45,6 @@ Property 'group2' was removed
 ## Установка 
 ```
 git clone git@github.com:ViktorSitnikov97/java-project-71.git
-cd java-project-71
 make install
 ```
 ## Запуск
@@ -53,24 +52,14 @@ make install
 ./build/install/app/bin/app [-f required format(not necessary option)] filepeth1 filepeth2
 ```
 ## Демонстрация
-Пример начала работы https://asciinema.org/a/645513
-Пример сравнения двух файлов формата .json https://asciinema.org/a/645515
-Пример сравнения двух файлов формата .yml https://asciinema.org/a/645516
-Пример сравнения двух файлов формата .json, имеющих вложенные струкртуры https://asciinema.org/a/645517
-Пример сравнения двух файлов формата .yml с выводом отчета типа plain https://asciinema.org/a/645520
-Пример форматтера JSON, работающего с двумя файлами формата .json и .yml https://asciinema.org/a/645522
-
-
-
-
-    
-https://asciinema.org/a/643611
-
-https://asciinema.org/a/644190
-
-https://asciinema.org/a/644469
-
-https://asciinema.org/a/644521
-
-https://asciinema.org/a/644555
-
+> [Пример](https://asciinema.org/a/645513) начала работы
+> 
+> [Пример](https://asciinema.org/a/645515) сравнения двух файлов формата .json
+> 
+> [Пример](https://asciinema.org/a/645516) сравнения двух файлов формата .yml
+> 
+> [Пример](https://asciinema.org/a/645517) сравнения двух файлов формата .json, имеющих вложенные струкртуры
+> 
+> [Пример](https://asciinema.org/a/645520) сравнения двух файлов формата .yml с выводом отчета типа plain
+> 
+> [Пример](https://asciinema.org/a/645522) форматтера JSON, работающего с двумя файлами форматов .json и .yml
