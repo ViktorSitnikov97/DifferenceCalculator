@@ -2,6 +2,9 @@ package hexlet.code;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -31,87 +34,32 @@ public class DifferTest {
         jsonComparisonResult = getDataString("JsonComparisonResultDeepStructure.json");
     }
 
-    @Test
-    public void generateTestStylishForFilesJson() throws Exception {
+    @ParameterizedTest
+    @ValueSource(strings = {"json", "yml"})
+    public void generateTest(String format) throws Exception {
+        String filePath1 = getPath("DeepStructurefile1." + format).toString();
+        String filePath2 = getPath("DeepStructurefile2." + format).toString();
 
-        Path file1 = getPath("DeepStructurefile1.json");
-        Path file2 = getPath("DeepStructurefile2.json");
-
-        String absolutePathFile1 = file1.toFile().getAbsolutePath();
-        String absolutePathFile2 = file2.toFile().getAbsolutePath();
-
-        String actual = Differ.generate(absolutePathFile1, absolutePathFile2);
-        assertEquals(stylishComparisonResult, actual);
-
-    }
-
-    @Test
-    public void generateTestStylishForFilesYml() throws Exception {
-
-        Path file1 = getPath("DeepStructurefile1.yml");
-        Path file2 = getPath("DeepStructurefile2.yml");
-
-        String absolutePathFile1 = file1.toFile().getAbsolutePath();
-        String absolutePathFile2 = file2.toFile().getAbsolutePath();
-
-        String actual = Differ.generate(absolutePathFile1, absolutePathFile2);
-        assertEquals(stylishComparisonResult, actual);
+        assertEquals(Differ.generate(filePath1, filePath2), stylishComparisonResult);
+        assertEquals(Differ.generate(filePath1, filePath2, "stylish"), stylishComparisonResult);
+        assertEquals(Differ.generate(filePath1, filePath2, "plain"), plainComparisonResult);
+        assertEquals(Differ.generate(filePath1, filePath2, "json"), jsonComparisonResult);
 
     }
 
     @Test
-    public void generateTestPlainForFilesJson() throws Exception {
+    public void getDataFormatTest() {
+        var actualJson = "json";
+        var actualYml = "yml";
+        var actualEmpty = "";
 
-        Path file1 = getPath("DeepStructurefile1.json");
-        Path file2 = getPath("DeepStructurefile2.json");
+        String filePathJson = getPath("DeepStructurefile1.json").toString();
+        String filePathYml = getPath("DeepStructurefile1.yml").toString();
+        String filePathWithoutFormat = getPath("DeepStructurefile1").toString();
 
-        String absolutePathFile1 = file1.toFile().getAbsolutePath();
-        String absolutePathFile2 = file2.toFile().getAbsolutePath();
-
-        String actual = Differ.generate(absolutePathFile1, absolutePathFile2, "plain");
-        assertEquals(plainComparisonResult, actual);
-
-    }
-
-    @Test
-    public void generateTestPlainForFilesYml() throws Exception {
-
-        Path file1 = getPath("DeepStructurefile1.yml");
-        Path file2 = getPath("DeepStructurefile2.yml");
-
-        String absolutePathFile1 = file1.toFile().getAbsolutePath();
-        String absolutePathFile2 = file2.toFile().getAbsolutePath();
-
-        String actual = Differ.generate(absolutePathFile1, absolutePathFile2, "plain");
-        assertEquals(plainComparisonResult, actual);
-
-    }
-
-    @Test
-    public void generateTestJsonForFilesJson() throws Exception {
-
-        Path file1 = getPath("DeepStructurefile1.json");
-        Path file2 = getPath("DeepStructurefile2.json");
-
-        String absolutePathFile1 = file1.toFile().getAbsolutePath();
-        String absolutePathFile2 = file2.toFile().getAbsolutePath();
-
-        String actual = Differ.generate(absolutePathFile1, absolutePathFile2, "json");
-        assertEquals(jsonComparisonResult, actual);
-
-    }
-
-    @Test
-    public void generateTestJsonForFilesYml() throws Exception {
-
-        Path file1 = getPath("DeepStructurefile1.yml");
-        Path file2 = getPath("DeepStructurefile2.yml");
-
-        String absolutePathFile1 = file1.toFile().getAbsolutePath();
-        String absolutePathFile2 = file2.toFile().getAbsolutePath();
-
-        String actual = Differ.generate(absolutePathFile1, absolutePathFile2, "json");
-        assertEquals(jsonComparisonResult, actual);
+        assertEquals(Differ.getDataFormat(filePathJson), actualJson);
+        assertEquals(Differ.getDataFormat(filePathYml), actualYml);
+        assertEquals(Differ.getDataFormat(filePathWithoutFormat), actualEmpty);
 
     }
 
