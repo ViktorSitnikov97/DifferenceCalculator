@@ -44,7 +44,7 @@ Property 'group2' was removed
 
 ## Установка 
 ```
-git clone git@github.com:ViktorSitnikov97/java-project-71.git
+git clone git@github.com:ViktorSitnikov97/DifferenceCalculator.git
 make install
 ```
 ## Запуск
