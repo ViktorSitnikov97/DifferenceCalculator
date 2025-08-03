@@ -3,6 +3,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ViktorSitnikov97/java-project-71/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ViktorSitnikov97/java-project-71/actions)
 [![example workflow](https://github.com/ViktorSitnikov97/java-project-71/actions/workflows/main.yml/badge.svg)](https://github.com/ViktorSitnikov97/java-project-71/actions)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ViktorSitnikov97_DifferenceCalculator&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ViktorSitnikov97_DifferenceCalculator)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ViktorSitnikov97_DifferenceCalculator&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ViktorSitnikov97_DifferenceCalculator)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ViktorSitnikov97_DifferenceCalculator&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ViktorSitnikov97_DifferenceCalculator)
 
