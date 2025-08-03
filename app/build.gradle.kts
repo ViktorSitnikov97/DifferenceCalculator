@@ -1,5 +1,6 @@
 
 plugins {
+    id("org.sonarqube") version "6.2.0.5505"
     application
     jacoco
     id("checkstyle")
@@ -14,6 +15,14 @@ application {
 
 repositories {
     mavenCentral()
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "ViktorSitnikov97_DataValidator")
+        property("sonar.organization", "viktorsitnikov97")
+        property("sonar.host.url", "https://sonarcloud.io")
+    }
 }
 
 dependencies {
