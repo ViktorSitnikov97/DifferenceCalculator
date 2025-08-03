@@ -1,8 +1,10 @@
 # Проект  "Вычислитель отличий"
 
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/ViktorSitnikov97/java-project-71/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ViktorSitnikov97/java-project-71/actions) [![example workflow](https://github.com/ViktorSitnikov97/java-project-71/actions/workflows/main.yml/badge.svg)](https://github.com/ViktorSitnikov97/java-project-71/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/e9575cc8fa04dbb25e5f/maintainability)](https://codeclimate.com/github/ViktorSitnikov97/java-project-71/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e9575cc8fa04dbb25e5f/test_coverage)](https://codeclimate.com/github/ViktorSitnikov97/java-project-71/test_coverage)
+[![Actions Status](https://github.com/ViktorSitnikov97/java-project-71/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ViktorSitnikov97/java-project-71/actions)
+[![example workflow](https://github.com/ViktorSitnikov97/java-project-71/actions/workflows/main.yml/badge.svg)](https://github.com/ViktorSitnikov97/java-project-71/actions)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ViktorSitnikov97_DifferenceCalculator&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ViktorSitnikov97_DifferenceCalculator)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ViktorSitnikov97_DifferenceCalculator&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ViktorSitnikov97_DifferenceCalculator)
 
 ## Описание
 Вычислитель отличий – программа, определяющая разницу между двумя структурами данных.
