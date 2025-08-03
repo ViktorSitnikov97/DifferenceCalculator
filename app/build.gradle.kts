@@ -19,6 +19,7 @@ repositories {
 
 sonar {
     properties {
+        property("sonar.projectName", "DataValidator")
         property("sonar.projectKey", "ViktorSitnikov97_DataValidator")
         property("sonar.organization", "viktorsitnikov97")
         property("sonar.host.url", "https://sonarcloud.io")
